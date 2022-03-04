@@ -1,0 +1,23 @@
+body{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+.btn{
+    padding: 20px;
+    background-color: bisque;
+    border-radius: 15px;
+
+}
+
+.btn:hover{
+    background-color: burlywood;
+}
+
+h1{
+    background-color: white;
+}
