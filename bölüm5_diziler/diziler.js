@@ -49,8 +49,51 @@ meyveler.splice(1,0,"Erik");
 // Dizinin 4. indeksındekı elemanı sıler yerıne  Mango yazar
 meyveler.splice(4,1,"Mango");
 console.log(meyveler);
-h1.innerHTML=meyveler;
+h1.innerHTML= meyveler;
 
 // ======== Dızı  Erişim  Methodları ==========
-const sayilar=[3,5,2,"2","üc",2,"bes,5"]
-meyveler.includes("Mango")
+const sayilar=[3,5,2,"2","üc",2,"bes",5];
+console.log(sayilar.includes("5"));
+console.log(sayilar.includes(5));
+
+
+//İlk eşleşen indexi döndürür
+const ikiIndex=sayilar.indexOf(2);
+console.log("2 nin son indexi:"+sayilar.lastIndexOf(2));
+const ucIndex=sayilar.indexOf("üc");
+ucIndex<0 ?alert("Aranılan nesne bulunamadı"):alert("Aranılan nesnenin indexi:"+ucIndex)
+console.log(ikiIndex);
+
+//Dizinin elemanlarını string hale cevirir
+const sayilar1=sayilar.join(" ");// elemanların arasına bosluk koy
+console.log(sayilar1);
+// toStrıng fonksiyonu  sadece dizinin elemanlarının aralarına , virgül koyarak birleştirir 
+//ve string  yapar.
+const sayilar2=sayilar.toString();
+console.log(sayilar2);
+h1.innerHTML=sayilar2;
+
+ const arabalar=["bmw","mercedes","audi","ferrari","anadol"];
+
+ // Audi ve sonrasını alır
+//Tek rakam  başlangıç indexini gösterir
+ const arabalar1=arabalar.slice(2);
+ arabalar1.push("Fiat");// arabalar1 in sonuna fiat ekler
+ console.log(arabalar1);
+
+ //mersedes auidiyi alır
+ //! Start indexi dahil, end indexi dahil degildir
+ const arabalar2=arabalar.slice(1,3);
+ console.log(arabalar2);
+
+
+ //======CONCAT===============
+
+ const yazilar=["a","b","ad","soyad","yas"];
+ const rakamlar=[3,5,1,4,7];
+ const birlesik=yazilar.concat(rakamlar,true,true,false,[4,7,9]);
+ console.log(birlesik);
+
+ 
+ console.log(typeof birlesik[7]);
+ h1.innerHTML=birlesik;
