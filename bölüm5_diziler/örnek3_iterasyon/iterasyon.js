@@ -239,6 +239,8 @@ const isimBul = (harf) => {
   const buyukHarf = harf.toUpperCase();
   adlar.filter((x) => x.startsWith(buyukHarf)).forEach((x) => console.log(x));
 };
+//arrow function da süslü parantez kullanırsak return etmemız gerekir
+//startsWith methodu ==>
 
 isimBul("a");
 isimBul("A");
